@@ -1,0 +1,16 @@
+{
+  "name": "app-store-helper",
+  "dockerComposeFile": "compose.yaml",
+  "service": "devcontainer",
+  "workspaceFolder": "/go/src/github.com/a10adotapp/appstorehelper",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "golang.go"
+      ],
+      "settings": {
+        "remote.autoForwardPorts": false
+      }
+    }
+  }
+}

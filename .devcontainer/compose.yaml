@@ -1,0 +1,13 @@
+services:
+  devcontainer:
+    image: app-store-helper
+    build:
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    working_dir: /go/src/github.com/a10adotapp/appstorehelper
+    command: sleep infinity
+    volumes:
+      - ../:/go/src/github.com/a10adotapp/appstorehelper
+    ports:
+      - 3000:3000
